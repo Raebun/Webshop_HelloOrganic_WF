@@ -92,7 +92,7 @@
 			// discountsToolStripMenuItem
 			// 
 			this.discountsToolStripMenuItem.Name = "discountsToolStripMenuItem";
-			this.discountsToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+			this.discountsToolStripMenuItem.Size = new System.Drawing.Size(126, 22);
 			this.discountsToolStripMenuItem.Text = "Discounts";
 			this.discountsToolStripMenuItem.Click += new System.EventHandler(this.discountsToolStripMenuItem_Click);
 			// 

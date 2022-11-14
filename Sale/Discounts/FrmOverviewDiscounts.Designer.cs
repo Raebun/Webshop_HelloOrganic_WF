@@ -28,19 +28,19 @@
 		/// </summary>
 		private void InitializeComponent()
 		{
-			this.lvCustomers = new System.Windows.Forms.ListView();
+			this.lvDiscount = new System.Windows.Forms.ListView();
 			this.btnAdd = new System.Windows.Forms.Button();
 			this.btnDelete = new System.Windows.Forms.Button();
 			this.btnEdit = new System.Windows.Forms.Button();
 			this.SuspendLayout();
 			// 
-			// lvCustomers
+			// lvDiscount
 			// 
-			this.lvCustomers.Location = new System.Drawing.Point(12, 12);
-			this.lvCustomers.Name = "lvCustomers";
-			this.lvCustomers.Size = new System.Drawing.Size(776, 398);
-			this.lvCustomers.TabIndex = 3;
-			this.lvCustomers.UseCompatibleStateImageBehavior = false;
+			this.lvDiscount.Location = new System.Drawing.Point(12, 12);
+			this.lvDiscount.Name = "lvDiscount";
+			this.lvDiscount.Size = new System.Drawing.Size(776, 398);
+			this.lvDiscount.TabIndex = 3;
+			this.lvDiscount.UseCompatibleStateImageBehavior = false;
 			// 
 			// btnAdd
 			// 
@@ -77,7 +77,7 @@
 			this.Controls.Add(this.btnAdd);
 			this.Controls.Add(this.btnDelete);
 			this.Controls.Add(this.btnEdit);
-			this.Controls.Add(this.lvCustomers);
+			this.Controls.Add(this.lvDiscount);
 			this.Name = "FrmOverviewDiscounts";
 			this.Text = "FrmOverviewDiscounts";
 			this.ResumeLayout(false);
@@ -85,7 +85,7 @@
 		}
 
 		#endregion
-		private ListView lvCustomers;
+		private ListView lvDiscount;
 		private Button btnAdd;
 		private Button btnDelete;
 		private Button btnEdit;

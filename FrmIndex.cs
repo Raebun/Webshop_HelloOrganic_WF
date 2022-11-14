@@ -5,6 +5,7 @@ namespace HelloOrganic_WebshopWF
 		public FrmIndex()
 		{
 			InitializeComponent();
+			//shopNowToolStripMenuItem.Visible = false;
 		}
 
 /*		private void formExists<T>() where T : Form, new()

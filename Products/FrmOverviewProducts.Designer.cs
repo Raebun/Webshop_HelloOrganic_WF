@@ -28,19 +28,19 @@
 		/// </summary>
 		private void InitializeComponent()
 		{
-			this.lvCustomers = new System.Windows.Forms.ListView();
+			this.lvOverviewProducts = new System.Windows.Forms.ListView();
 			this.btnAdd = new System.Windows.Forms.Button();
 			this.btnDelete = new System.Windows.Forms.Button();
 			this.btnEdit = new System.Windows.Forms.Button();
 			this.SuspendLayout();
 			// 
-			// lvCustomers
+			// lvOverviewProducts
 			// 
-			this.lvCustomers.Location = new System.Drawing.Point(12, 12);
-			this.lvCustomers.Name = "lvCustomers";
-			this.lvCustomers.Size = new System.Drawing.Size(776, 398);
-			this.lvCustomers.TabIndex = 3;
-			this.lvCustomers.UseCompatibleStateImageBehavior = false;
+			this.lvOverviewProducts.Location = new System.Drawing.Point(12, 12);
+			this.lvOverviewProducts.Name = "lvOverviewProducts";
+			this.lvOverviewProducts.Size = new System.Drawing.Size(776, 398);
+			this.lvOverviewProducts.TabIndex = 3;
+			this.lvOverviewProducts.UseCompatibleStateImageBehavior = false;
 			// 
 			// btnAdd
 			// 
@@ -77,15 +77,15 @@
 			this.Controls.Add(this.btnAdd);
 			this.Controls.Add(this.btnDelete);
 			this.Controls.Add(this.btnEdit);
-			this.Controls.Add(this.lvCustomers);
+			this.Controls.Add(this.lvOverviewProducts);
 			this.Name = "FrmOverviewProducts";
-			this.Text = "FrmOverviewProducts";
+			this.Text = "Overview Products";
 			this.ResumeLayout(false);
 
 		}
 
 		#endregion
-		private ListView lvCustomers;
+		private ListView lvOverviewProducts;
 		private Button btnAdd;
 		private Button btnDelete;
 		private Button btnEdit;
