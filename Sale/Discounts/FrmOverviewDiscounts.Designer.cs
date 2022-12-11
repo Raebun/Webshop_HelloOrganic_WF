@@ -36,6 +36,8 @@
 			// 
 			// lvDiscount
 			// 
+			this.lvDiscount.FullRowSelect = true;
+			this.lvDiscount.GridLines = true;
 			this.lvDiscount.Location = new System.Drawing.Point(12, 12);
 			this.lvDiscount.Name = "lvDiscount";
 			this.lvDiscount.Size = new System.Drawing.Size(776, 398);
@@ -79,7 +81,8 @@
 			this.Controls.Add(this.btnEdit);
 			this.Controls.Add(this.lvDiscount);
 			this.Name = "FrmOverviewDiscounts";
-			this.Text = "FrmOverviewDiscounts";
+			this.Text = "Overview discount";
+			this.Load += new System.EventHandler(this.FrmOverviewDiscounts_Load);
 			this.ResumeLayout(false);
 
 		}

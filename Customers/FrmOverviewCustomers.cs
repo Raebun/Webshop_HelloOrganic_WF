@@ -25,12 +25,13 @@ namespace HelloOrganic_WebshopWF.Customers
 		private void FrmOverviewCustomers_Load(object sender, EventArgs e)
 		{
 			lvCustomers.Columns.Add("ID");
-			lvCustomers.Columns.Add("Firstname");
-			lvCustomers.Columns.Add("Lastname");
-			lvCustomers.Columns.Add("Address");
-			lvCustomers.Columns.Add("City");
-			lvCustomers.Columns.Add("Postal");
-			lvCustomers.Columns.Add("phone");
+			lvCustomers.Columns.Add("Firstname", 100);
+			lvCustomers.Columns.Add("Lastname", 100);
+			lvCustomers.Columns.Add("Address", 150);
+			lvCustomers.Columns.Add("City", 100);
+			lvCustomers.Columns.Add("Postal", 90);
+			lvCustomers.Columns.Add("Phone", 90);
+			lvCustomers.Columns.Add("Cart");
 
 			lvCustomers.View = View.Details;
 			FillListView();
@@ -50,6 +51,10 @@ namespace HelloOrganic_WebshopWF.Customers
 				lvItem.SubItems.Add(x.City);
 				lvItem.SubItems.Add(x.PostalCode);
 				lvItem.SubItems.Add(x.Phone);
+				if (x.ShoppingCart != null)
+				{
+					lvItem.SubItems.Add(x.ShoppingCart.CartId.ToString());
+				}
 
 				lvItem.Tag = x;
 
