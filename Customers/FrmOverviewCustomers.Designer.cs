@@ -33,6 +33,7 @@
 			this.btnDelete = new System.Windows.Forms.Button();
 			this.btnAdd = new System.Windows.Forms.Button();
 			this.label1 = new System.Windows.Forms.Label();
+			this.btnRefreshLv = new System.Windows.Forms.Button();
 			this.SuspendLayout();
 			// 
 			// lvCustomers
@@ -88,11 +89,23 @@
 			this.label1.TabIndex = 8;
 			this.label1.Text = "Customers";
 			// 
+			// btnRefreshLv
+			// 
+			this.btnRefreshLv.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(162)))), ((int)(((byte)(188)))), ((int)(((byte)(166)))));
+			this.btnRefreshLv.Location = new System.Drawing.Point(551, 404);
+			this.btnRefreshLv.Name = "btnRefreshLv";
+			this.btnRefreshLv.Size = new System.Drawing.Size(75, 38);
+			this.btnRefreshLv.TabIndex = 9;
+			this.btnRefreshLv.Text = "Refresh";
+			this.btnRefreshLv.UseVisualStyleBackColor = false;
+			this.btnRefreshLv.Click += new System.EventHandler(this.btnRefreshLv_Click);
+			// 
 			// FrmOverviewCustomers
 			// 
 			this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
 			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
 			this.ClientSize = new System.Drawing.Size(800, 450);
+			this.Controls.Add(this.btnRefreshLv);
 			this.Controls.Add(this.label1);
 			this.Controls.Add(this.btnAdd);
 			this.Controls.Add(this.btnDelete);
@@ -113,5 +126,6 @@
 		private Button btnDelete;
 		private Button btnAdd;
 		private Label label1;
+		private Button btnRefreshLv;
 	}
 }

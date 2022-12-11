@@ -102,5 +102,10 @@ namespace HelloOrganic_WebshopWF.Customers
 			addCustomerForm.Show();
 			FillListView();
 		}
+
+		private void btnRefreshLv_Click(object sender, EventArgs e)
+		{
+			FillListView();
+		}
 	}
 }
