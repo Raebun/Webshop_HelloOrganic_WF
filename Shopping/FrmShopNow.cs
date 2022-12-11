@@ -33,7 +33,8 @@ namespace HelloOrganic_WebshopWF.Shopping
 			List<CustomerDTO> customerList = customerBLL.Read();
 			foreach (CustomerDTO x in customerList)
 			{
-				cbSelectCustomer.Items.Add("("+x.CustomerId +") "+ x.FirstName +" "+ x.LastName);
+				//cbSelectCustomer.Items.Add("("+x.CustomerId +") "+ x.FirstName +" "+ x.LastName);
+				cbSelectCustomer.Items.Add(x);
 			}
 		}
 
